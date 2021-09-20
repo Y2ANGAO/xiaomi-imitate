@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.container-fulid {
+  width: 100%;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-top {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #b0b0b0;
+  background-color: #333;
+}
+
+.nav-top ul {
+  float: left;
+}
+
+.nav-top ul li {
+  position: relative;
+  float: left;
+  margin-right: 11px;
+}
+
+.nav-top ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -6px;
+  width: 1px;
+  height: 16px;
+  background-color: #424242;
+}
+
+.nav-top ul li:nth-last-of-type(1)::after {
+  content: none;
+}
+
+.nav-top ul li:hover {
+  color: white;
+}
+
+.nav-top ol {
+  float: right;
+}
+
+.nav-top ol li {
+  position: relative;
+  float: left;
+  margin-left: 11px;
+}
+
+.nav-top ol li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -6px;
+  width: 1px;
+  height: 16px;
+  background-color: #424242;
+}
+
+.nav-top ol li:nth-last-of-type(-n + 2)::after {
+  content: none;
+}
+
+.nav-top ol li:hover {
+  color: white;
+}
+
+.nav-top ol .nav-btn {
+  width: 120px;
+  background-color: #424242;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-top ol .nav-btn:hover {
+  color: #ff6700;
+  background-color: white;
+}
+
+.load-app {
+  position: relative;
+}
+
+.load-app:hover::before {
+  display: block;
+}
+
+.load-app:hover .down-img {
+  height: 148px;
+}
+
+.load-app::before {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid white;
+}
+
+.load-app .down-img {
+  position: absolute;
+  overflow: hidden;
+  transition: .4s;
+  transition-property: height;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 124px;
+  height: 0px;
+  background-color: white;
+  z-index: 999;
+  text-align: center;
+  box-shadow: 0 2px 5px -2px #aaa;
+}
+
+.load-app .down-img img {
+  display: block;
+  width: 90px;
+  margin: 18px auto 12px;
+}
+
+.load-app .down-img span {
+  display: block;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  color: black;
+}
+
+.foot {
+  background-color: #fafafa;
+  padding: 30px 0px;
+  overflow: hidden;
+}
+
+.foot img {
+  width: 56px;
+  float: left;
+  margin-right: 10px;
+}
+
+.foot ul li {
+  float: left;
+  font-size: 12px;
+  color: #757575;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.foot ul li:hover {
+  color: #ff6700;
+}
+
+.foot ul li::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 1px;
+  width: 1px;
+  height: 14px;
+  background-color: #b0b0b0;
+}
+
+.foot ul li:last-child::after {
+  content: none;
+}
+
+.foot p {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+
+.foot p a:hover {
+  color: #ff6700;
+}
+
+.foot .info-link {
+  padding-left: 66px;
+  padding-top: 5px;
+}
+
+.foot .info-link img {
+  width: auto;
+  height: 28px;
+}
+
+.foot .bottom-idea {
+  margin: 30px auto 0;
+  width: 100%;
+  height: 19px;
+  background: url(../../icons/slogan2020.png) no-repeat center 0;
+}
+
+.bottom-handoff {
+  position: relative;
+}
+
+.bottom-handoff img {
+  position: absolute;
+}
